@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+           
+        }
+        .container .box{
+            width: 23%;
+            height: 200px;
+            background-color: blueviolet;
+            border: 5px solid red;
+            margin-top: 10px;
+        }
+
+        /* responsive */
+        /* for medium devices */
+        @media screen and (max-width: 912px) {
+            .container .box{
+                width: 48%;
+            }
+        }
+
+        /* for small devices */
+        @media screen and (max-width: 600px){
+            .container .box{
+                width: 98%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Keyframe</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: blueviolet;
+      }
+
+      .container {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+        animation-name: up-down;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-delay: 2s;
+      }
+
+      @keyframes up-down {
+        0%{
+            transform: translateY(-20px);
+        }
+         
+        25%{
+            transform: translateX(30px);
+        }
+
+        50%{
+            transform: translateY(20px);
+        }
+
+        75%{
+            transform: translateX(-30px);
+        }
+
+        100%{
+            transform: translateY(-20px);
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://assets.stickpng.com/thumbs/5859662e4f6ae202fedf2878.png"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-item</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: #f345ab;
+            display: flex;
+            /* flex-wrap: wrap; */
+            padding: 10px;
+            align-items: center;
+            /* flex-direction: row; */
+            flex-flow: row wrap;
+        }
+
+        .container .left-box{
+            width: 50%;
+            font-size: 25px;
+        }
+
+        .left-box button{
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(244, 44, 8);
+            color: #fff;
+            transition: ease-in-out 2s;
+            
+        }
+
+        .left-box button:hover{
+            background-image: linear-gradient(to top right, orange, blue);
+        }
+
+        .container .right-box{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat ea ipsa perferendis, alias optio est illum! Earum ducimus nesciunt totam amet. Velit voluptas odio vel? Totam sequi numquam voluptatem!</p>
+            <br>
+            <button>Learn More</button>
+        </div>
+        <div class="right-box">
+            <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c319.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box1{
+            width: 400px;
+            height: 200px;
+            font-size: 20px;
+            background-color: green;
+            color: rgb(255, 255, 255);
+            margin: 40px auto;
+            padding: 10px;
+            /* text-align: center; */
+            text-align: justify;
+            text-indent: 1.5px;
+        }
+        .box2{
+            width: 400px;
+            height: 200px;
+            font-size: 20px;
+            background-color: green;
+            color: rgb(255, 255, 255);
+            margin: 40px auto;
+        }
+        span{
+            vertical-align: baseline;
+            text-decoration-line: overline;
+            text-decoration-color: red ;
+            color: blue;
+        }
+        .demo{
+            vertical-align: baseline;
+            /* text-decoration-line: overline;
+            text-decoration-style: wavy;
+            text-decoration-color: red;
+            text-decoration-thickness: 5px; */
+            text-decoration: underline red dotted 5px;
+            color: blue;
+
+            /* text-transform: uppercase; */
+            /* text-transform: lowercase; */
+            text-transform: capitalize;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body><br>
+    <h1 class="demo">Heading</h1>
+    <div class="box1">
+        Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Possimus nesciunt perspiciatis ab fuga, nam modi delectus, dicta ipsa earum ducimus commodi! Tenetur rerum tempora placeat quae error doloribus quibusdam quasi.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt perspiciatis ab fuga, nam modi delectus, dicta ipsa earum ducimus commodi! Tenetur rerum tempora placeat quae error doloribus quibusdam quasi.
+    </div>
+    <a href="">hello</a>
+</body>
+</html>

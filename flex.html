@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            background-color: dodgerblue;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+            align-content: center;
+        }
+
+        .flex-container .box{
+            height:200px;
+            width: 23%;
+            background-color: #fff;
+            margin: 5px;
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            /* gap: 3px; */
+            justify-content: space-evenly;
+        }
+
+        .box > .semi-box{
+            width: 48%;
+            height: 80%;
+            background-color: #dbc60d;
+            margin-top: 5px;
+        }
+        .box2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box2 > .box1{
+            width: 25%;
+            height: 25%;
+            background-color: #dbc60d;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box">
+            <div class="semi-box">
+            </div>
+            <div class="semi-box"></div>
+        </div>
+        <div class="box box2">
+            <div class="box1"></div>
+        </div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+</body>
+</html>

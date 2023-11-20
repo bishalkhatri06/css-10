@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+
+    <!-- Fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 300px;
+        height: 350px;
+        box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.5),
+          -10px -10px 15px rgb(0, 0, 0, 0.5);
+        margin: 50px auto;
+        position: relative;
+      }
+      .container .top-box {
+        height: 150px;
+        background-image: linear-gradient(
+          to right,
+          rgb(255, 0, 0, 0.7),
+          rgb(255, 0, 0, 0.5)
+        );
+      }
+
+      .container .overlay {
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.5);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+      }
+
+      .container:hover .overlay {
+        display: block;
+      }
+      p {
+        font-size: 1.5em;
+        /* font-size: 2rem; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-box"></div>
+      <div class="bottom-box"></div>
+      <div class="overlay"></div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit
+      maiores iste, ipsum facere aut deleniti accusamus dolore quod, nulla
+      distinctio quam, earum error dolores quidem officiis non blanditiis qui?
+    </p>
+  </body>
+</html>

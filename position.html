@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 300px;
+        height: 200px;
+        background-color: rebeccapurple;
+        position: relative;
+        bottom: 20px;
+        left: 30%;
+        z-index: 2;
+      }
+
+      .box {
+        width: 300px;
+        height: 200px;
+        background-color: brown;
+        position: absolute;
+        top: 10px;
+        right: 30%;
+        z-index: 3;
+      }
+      .box1 {
+        width: 300px;
+        height: 200px;
+        background-color: rgb(59, 220, 19);
+        position: absolute;
+        top: 80px;
+        right: 45%;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <pre>
+        i> static position
+        ii> relative position
+        iii> absolute position
+        iv> sticky position
+        v> fixed position
+    </pre>
+    <!-- relative position -> positioned the item on the basis of self  -->
+
+    <div class="container"></div>
+
+    <!-- absolute position -> on the basis of parent element -->
+    <div class="box"></div>
+    <div class="box1"></div>
+  </body>
+</html>
