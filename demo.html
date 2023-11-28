@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 3fr 3fr 2fr;
+            grid-template-rows: 8vh 42vh 42vh 8vh;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            align-items: center;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+        }
+        .footer{
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: aqua;
+        }
+
+        .top{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            background-color: brown;
+        }
+
+        .bottom-left{
+            background-color: cadetblue;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+        }
+
+        .leftSideBar{
+            background-color: chocolate;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+        }
+
+        .rightSideBar{
+            background-color: darkgoldenrod;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            /* grid-column-end: 5; */
+        }
+
+        .bottom-right{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+                <li>Home</li>
+                <li>About</li>
+                <li>Gallery</li>
+                <li>Blogs</li>
+                <li>Contact</li>
+        </div>
+        <div class="footer">Footer</div>
+        <div class="top">Top</div>
+        <div class="bottom-left">Bottom Left</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="leftSideBar">Left Side Bar</div>
+        <div class="rightSideBar">Right Side Bar</div>
+    </div>
+</body>
+</html>
